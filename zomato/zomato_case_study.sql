@@ -131,6 +131,7 @@ GROUP BY MONTH(DATE(t1.date)) , MONTHNAME(DATE(t1.date))
 ORDER BY MONTH(DATE(date)) ;
     
 
+-- This below case study not solved because in MySQL may be there is no CORR() function , but in a PostgreSQL it present
 -- 17. find correlation between delivery_time and total rating
 -- SELECT CORR(delivery_time, delivery_rating + restaurant_rating) AS 'corr'
 -- FROM orders ;
